@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="cwei">
+        <input type="radio" name="aine" id="" value="K">Kobieta <br>
+        <input type="radio" name="aine" id="" value="M"> Mężczyzna <br>
+
+        <input type="checkbox" name="zainter" id="" value="gry"> gry <br>
+        <input type="checkbox" name="zainter" id="" value="ksiazki"> ksiazki <br>
+    </form>
+
+    <select name="" id="xd">
+        <optgroup label="ZSRR">
+            <option value="1">kgw</option>
+            <option value="2">kgb</option>
+        </optgroup>
+        <optgroup label="Germany SZTAG">
+            <option value="3">ss</option>
+        </optgroup>
+    </select><br>
+
+    <select size="2" id="xd">
+        <option value="1">kgw</option>
+        <option value="2">kgb</option>
+        <option value="3">ss</option>
+    </select>
+    <button onclick="showsome()">xd</button>
+    <script>
+        function showsome() {
+            
+            alert(document.getElementById("xd").value);
+
+            alert(document.forms["cwei"].aine.value);
+
+            alert(document.getElementsByName("zainter"));
+        }
+    </script>
+</body>
+</html>
